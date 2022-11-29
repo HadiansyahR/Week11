@@ -1,4 +1,4 @@
-package org.example;
+package org.Utilities;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,14 +7,14 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ConnectionManager {
-    private String DB_URL = "jdbc:mysql://localhost:3306/database_w5";
+    private String DB_URL = "jdbc:mysql://localhost:3306/smart-clinic";
     private String username;
     private String password;
     private Connection connection;
 
-    public ConnectionManager(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public ConnectionManager() {
+        this.username = "root";
+        this.password = "";
     }
 
     public String getDB_URL() {
